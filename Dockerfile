@@ -1,16 +1,3 @@
-#
-# Build stage
-#
-#FROM maven:3.8.3-openjdk-17 AS build
-#FROM maven:3.8.3-openjdk-11 AS build
-#COPY src /home/app/src
-#COPY pom.xml /home/app
-#RUN mvn -f /home/app/pom.xml clean package
-#EXPOSE 8080
-#ENTRYPOINT ["java","-jar","/home/app/target/spring_docker.jar"]
-
-
-
 
 # Use official OpenJDK 11 as the base image
 FROM openjdk:11-jre-slim
